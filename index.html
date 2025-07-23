@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gian's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <ul class="nav-menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <!--Burger 3 Dash-->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hello, I am <span class="hero-name">Gian</span> currently based in
+          <div class="hero-location">Cebu, Philippines</div>
+        </h1>
+        <p class="hero-description">
+          A web designer and frontend developer who enjoys creating clean,
+          user-friendly websites. Passionate about turning ideas into functional
+          designs. Currently learning more about cloud and data engineering to
+          level up in the tech industry.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">Get Started</a>
+          <a href="resume.pdf" download="resume.pdf" class="btn btn-secondary">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="section-header">
+        <p class="section-subtitle">Get To Know More</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="cards-container">
+        <div class="card">
+          <img src="suitcase.png" alt="Experience Icon" class="card-icon" />
+          <h3 class="card-title">Experience</h3>
+          <p class="card-subtitle">2+ years</p>
+          <p class="card-description">Web Design / Frontend Development</p>
+        </div>
+
+        <div class="card">
+          <img src="graduate.png" alt="Education Icon" class="card-icon" />
+          <h3 class="card-title">Education</h3>
+          <p class="card-subtitle">Cebu Institute of Technology - University</p>
+          <p class="card-description">
+            Bachelor of Science in Information Technology
+          </p>
+        </div>
+      </div>
+
+      <p class="about-description">
+        Gian Caparas is an aspiring Cloud and Data Engineer, currently pursuing
+        a degree in Information Technology at Cebu Institute of Technology –
+        University. I'm focused on building personal projects that combine
+        functionality and clean, modern design—ranging from fully functional
+        websites to aesthetic front-end interfaces. Alongside my studies, I take
+        on freelance work in web design and front-end development to apply what
+        I learn and gain real-world experience. I'm also actively learning
+        different tech stacks and staying updated on the latest trends in
+        technology—from cloud platforms and programming languages to modern
+        tools used in the industry.
+      </p>
+    </section>
+
+    <section class="tools">
+      <div class="section-header">
+        <p class="section-subtitle">MY TOOL BOX</p>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-item">
+          <img src="html.png" alt="HTML">
+          <span class="tool-name">HTML</span>
+        </div>
+        <div class="tool-item">
+          <img src="css.png" alt="CSS">
+          <span class="tool-name">CSS</span>
+        </div>
+        <div class="tool-item">
+          <img src="javascript.png" alt="JavaScript">
+          <span class="tool-name">JavaScript</span>
+        </div>
+        <div class="tool-item">
+          <img src="figma.png" alt="Figma">
+          <span class="tool-name">Figma</span>
+        </div>
+        <div class="tool-item">
+          <img src="c++.png" alt="C++">
+          <span class="tool-name">C++</span>
+        </div>
+        <div class="tool-item">
+          <img src="php.png" alt="PHP">
+          <span class="tool-name">PHP</span>
+        </div>
+        <div class="tool-item">
+          <img src="photoshop.png" alt="Photoshop">
+          <span class="tool-name">Photoshop</span>
+        </div>
+        <div class="tool-item">
+          <img src="python.png" alt="Python">
+          <span class="tool-name">Python</span>
+        </div>
+        <div class="tool-item">
+          <img src="react.png" alt="React">
+          <span class="tool-name">React</span>
+        </div>
+        <div class="tool-item">
+          <img src="adobe.png" alt="Adobe">
+          <span class="tool-name">Adobe</span>
+        </div>
+        <div class="tool-item">
+          <img src="angular.png" alt="Angular">
+          <span class="tool-name">Angular</span>
+        </div>
+        <div class="tool-item">
+          <img src="java.png" alt="Java">
+          <span class="tool-name">Java</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="section-header">
+        <p class="section-subtitle">Check Out My</p>
+        <h2 class="section-title">Projects</h2>
+        
+      </div>
+
+    <script src="script.js"></script>
+
+    <!--Contact Section-->
+    <section id="contact" class="contact">
+      <div class="section-header">
+        <p class="section-subtitle">Get In Touch</p>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+  </body>
+</html>
