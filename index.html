@@ -159,10 +159,8 @@
       <div class="section-header">
         <p class="section-subtitle">Check Out My</p>
         <h2 class="section-title">Projects</h2>
-        
+        <p>COMING SOON</p>
       </div>
-
-    <script src="script.js"></script>
 
     <!--Contact Section-->
     <section id="contact" class="contact">
@@ -170,10 +168,10 @@
         <p class="section-subtitle">Get In Touch</p>
         <h2 class="section-title">Contact Me</h2>
       </div>
-      <form class="contact-form">
+      <form class="contact-form" id="contactForm">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" required />  
         </div>
         <div class="form-group">
           <label for="email">Email</label>
@@ -183,8 +181,15 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit" class="btn btn-primary" id="submit">Send Message</button>
       </form>
     </section>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+    (function() {
+        emailjs.init("wmeyepxtUZgmPTAlT");
+    })();
+    </script> 
+    <script src="script.js"></script>
   </body>
 </html>
