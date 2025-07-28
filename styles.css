@@ -745,6 +745,7 @@ body {
     text-align: center;
     justify-content: center;
     background-attachment: scroll;
+    background-position: left center;
   }
 
   .hero-content {
