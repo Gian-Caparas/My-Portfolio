@@ -51,3 +51,32 @@ window.addEventListener("scroll", () => {
     isScrolling = true;
   }
 });
+
+// Contact Form
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  const params = {
+    from_name: document.getElementById('name').value,
+    from_email: document.getElementById('email').value,
+    message: document.getElementById('message').value
+  };
+
+  emailjs.send('service_7g66p6m', 'template_0pcv0jo', params)
+    .then(function() {
+        // Clear the form
+        document.getElementById('contactForm').reset();
+        
+        // Show success message
+        alert('Message sent successfully!');
+        
+        // Scroll to contact section to stay in current section
+        document.getElementById('contact').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+    },  function(error){
+        alert('Failed to send message. Please try again.');  
+    });
+
+});
